@@ -30,3 +30,6 @@ def setup_teardown():
     yield  # 测试用例执行到这里，然后执行测试用例
     # teardown代码
     LOG.info('setup_teardown')
+
+if __name__ == "__main__":
+    pytest.main(['-vs', '--html=report/report.html'])

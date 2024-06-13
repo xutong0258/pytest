@@ -77,11 +77,11 @@ def cmd_ecute(cmd, logger=None, outfile=None, errfile=None):
 
         return return_code
 
-def test():
+def hello():
     str_cmd = 'dir'
     result, errors, return_code = cmd_ecute(str_cmd, LOG)
     LOG.info(f'result:{result}')
     print('test')
 
 if __name__ == '__main__':
-   test()
+   hello()
